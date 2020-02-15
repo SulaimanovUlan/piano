@@ -1,0 +1,88 @@
+
+.music_wrap{
+    height: 87%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hr{
+    height: 2px;
+    width: 100%;
+    background-color: silver;
+    position: relative;
+    top: 50px;
+}
+
+.click{
+    width: 60px;
+    height: 20px;
+    background-color: aqua;
+    margin: 0 auto;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+}
+
+.restart{
+    width: 60px;
+    height: 20px;
+    background-color: aqua;
+    margin: 0 auto;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    top: 30px;
+}
+
+.activeNotesFlow{
+    position: absolute;
+    transition:top 4s linear;
+}
+
+.activeWhiteNotes{
+    width: 2.5%;  
+    border-radius: 5px;
+    border: 2px solid #2B3B62;
+    background-color: #4B66AB;
+}
+
+.activeBlackNotes{
+    width: 1.6%;  
+    border-radius: 5px;
+    border: 2px solid #58A690;
+    background-color: #1D4E3D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Piano</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="js/mainjs.js" defer></script>
+    <script src="js/adjustpage.js" defer></script>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="functionality">
+           <header>
+              
+               <div class="volwraper">
+                    <div class="volslider">
+                        <output id="volume2"></output>
+                        <input type="range" class="fader" id="speed" min="0" max="100" step="1" value="50">
+                    </div>
+                    <div class="range_title">Speed</div>
+                </div>
+                
+                <div class="mode">
+                    <div class="mode_block" id="start">
+                        <img src="img/sustain-on.png" alt="" class="mode_img">
+                        <div class="mode_text">Start Play</div>
+                    </div>
+                    <div class="mode_block">
+                        <img src="img/player-on.png" alt="" class="mode_img">
+                        <div class="mode_text">Letter Notes</div>
+                    </div>
+                    <div class="mode_block" id="restart">
+                        <img src="img/keyboard-on.png" alt="" class="mode_img ectra_mode_img">
+                        <div class="mode_text">Restart Play</div>
+                    </div>
+                </div>    
+                
+                <div class="volwraper">
+                    <div class="range_title">Volume</div>
+                    <div class="volslider">
+                        <output id="volume"></output>
+                        <input type="range" class="fader" id="fade" min="0" max="100" step="1" value="50">
+                    </div>
+                </div>
+                
+                
+           </header>
+           
+           <div class="music_wrap">
+                <div class="hr"></div>
+           </div>
+       </div>
+        
+        <div class="piano hidetext">
+            <div data-note="KeyQ" class="key white KeyQ">Q</div>
+            <div data-note="KeyA" class="key white KeyA">A</div>
+            <div data-note="NumpadSubtract" class="key black NumpadSubtract">+</div>
+            <div data-note="KeyZ" class="key white KeyZ">Z</div>
+            <div data-note="NumpadMultiplyshift" class="key black NumpadMultiplyshift">-</div>
+            <div data-note="KeyW" class="key white KeyW">W</div>
+            <div data-note="KeyS" class="key white KeyS">S</div>
+            <div data-note="NumpadDivideshift" class="key black NumpadDivideshift">9</div>
+            <div data-note="KeyX" class="key white KeyX">X</div>
+            <div data-note="Numpad9shift" class="key black Numpad9shift">8</div>    
+            <div data-note="KeyE" class="key white KeyE">E</div>
+            <div data-note="Numpad8shift" class="key black Numpad8shift">7</div>
+            <div data-note="KeyD" class="key white KeyD">D</div>
+            <div data-note="KeyC" class="key white KeyC">C</div>
+            <div data-note="Numpad7shift" class="key black Numpad7shift">6</div>    
+            <div data-note="KeyR" class="key white KeyR">R</div>
+            <div data-note="Numpad6shift" class="key black Numpad6shift">5</div>
+            <div data-note="KeyF" class="key white KeyF">F</div>
+            <div data-note="KeyV" class="key white KeyV">V</div>
+            <div data-note="Numpad5shift" class="key black Numpad5shift">4</div>
+            <div data-note="KeyT" class="key white KeyT">T</div>
+            <div data-note="Numpad4shift" class="key black Numpad4shift">3</div>
+            <div data-note="KeyG" class="key white KeyG">G</div>
+            <div data-note="Numpad3shift" class="key black Numpad3shift">2</div>
+            <div data-note="KeyB" class="key white KeyB">B</div>
+            <div data-note="Digit5" class="key white Digit5">5</div>
+            <div data-note="Numpad2shift" class="key black Numpad2shift">1</div>
+            <div data-note="KeyH" class="key white KeyH">H</div>
+            <div data-note="Numpad1shift" class="key black Numpad1shift">0</div>
+            <div data-note="KeyN" class="key white KeyN">N</div>
+            <div data-note="Digit6" class="key white Digit6">6</div>
+            <div data-note="Numpad0shift" class="key black Numpad0shift">$</div>
+            <div data-note="KeyY" class="key white KeyY">Y</div>
+            <div data-note="NumpadMultiply" class="key black NumpadMultiply">*</div>
+            <div data-note="KeyU" class="key white KeyU">U</div>
+            <div data-note="NumpadDivide" class="key black NumpadDivide">/</div>
+            <div data-note="KeyJ" class="key white KeyJ">J</div>
+            <div data-note="KeyM" class="key white KeyM">M</div>
+            <div data-note="Numpad9" class="key black Numpad9">9</div>
+            <div data-note="KeyI" class="key white KeyI">I</div>
+            <div data-note="Numpad8" class="key black Numpad8">8</div>
+            <div data-note="KeyK" class="key white KeyK">K</div>
+            <div data-note="Comma" class="key white Comma">R</div>
+            <div data-note="Numpad7" class="key black Numpad7">7</div>
+            <div data-note="KeyO" class="key white KeyO">O</div>
+            <div data-note="Numpad6" class="key black Numpad6">6</div>
+            <div data-note="KeyL" class="key white KeyL">L</div>
+            <div data-note="Numpad5" class="key black Numpad5">5</div>
+            <div data-note="Period" class="key white Period">G</div>
+            <div data-note="KeyP" class="key white KeyP">P</div>
+            <div data-note="Numpad4" class="key black Numpad4">4</div>
+            <div data-note="Semicolon" class="key white Semicolon">E</div>
+            <div data-note="Numpad3" class="key black Numpad3">3</div>
+            <div data-note="Slash" class="key white Slash">D</div>
+            <div data-note="BracketLeft" class="key white BracketLeft">S</div>
+            <div data-note="Numpad2" class="key black Numpad2">2</div>
+            <div data-note="Quote" class="key white Quote">Y</div>
+            <div data-note="Numpad1" class="key black Numpad1">1</div>
+            <div data-note="BracketRight" class="key white BracketRight">W</div>
+            <div data-note="Numpad0" class="key black Numpad0">0</div>
+            <div data-note="Backslash" class="key white Backslash">Z</div>
+        </div>
+    </div>
+    
+    
+    <div class="sounds">
+        <audio src="sounds/1.wav" id="Backslash"></audio>
+        <audio src="sounds/2.wav" id="Numpad0"></audio>
+        <audio src="sounds/3.wav" id="BracketRight"></audio>
+        <audio src="sounds/4.wav" id="Numpad1"></audio>
+        <audio src="sounds/5.wav" id="Quote"></audio>
+        <audio src="sounds/6.wav" id="Numpad2"></audio>
+        <audio src="sounds/7.wav" id="BracketLeft"></audio>
+        <audio src="sounds/8.wav" id="Slash"></audio>
+        <audio src="sounds/9.wav" id="Numpad3"></audio>
+        <audio src="sounds/10.wav" id="Semicolon"></audio>
+        <audio src="sounds/11.wav" id="Numpad4"></audio>
+        <audio src="sounds/12.wav" id="KeyP"></audio>
+        <audio src="sounds/13.wav" id="Period"></audio>
+        <audio src="sounds/14.wav" id="Numpad5"></audio>
+        <audio src="sounds/15.wav" id="KeyL"></audio>
+        <audio src="sounds/16.wav" id="Numpad6"></audio>
+        <audio src="sounds/17.wav" id="KeyO"></audio>
+        <audio src="sounds/18.wav" id="Numpad7"></audio>
+        <audio src="sounds/19.wav" id="Comma"></audio>
+        <audio src="sounds/20.wav" id="KeyK"></audio>
+        <audio src="sounds/21.wav" id="Numpad8"></audio>
+        <audio src="sounds/22.wav" id="KeyI"></audio>
+        <audio src="sounds/23.wav" id="Numpad9"></audio>
+        <audio src="sounds/24.wav" id="KeyM"></audio>
+        <audio src="sounds/25.wav" id="KeyJ"></audio>
+        <audio src="sounds/26.wav" id="NumpadDivide"></audio>
+        <audio src="sounds/27.wav" id="KeyU"></audio>
+        <audio src="sounds/28.wav" id="NumpadMultiply"></audio>
+        <audio src="sounds/29.wav" id="KeyY"></audio>
+        <audio src="sounds/30.wav" id="Numpad0shift"></audio>
+        <audio src="sounds/31.wav" id="Digit6"></audio>
+        <audio src="sounds/32.wav" id="KeyN"></audio>
+        <audio src="sounds/33.wav" id="Numpad1shift"></audio>
+        <audio src="sounds/34.wav" id="KeyH"></audio>
+        <audio src="sounds/35.wav" id="Numpad2shift"></audio>
+        <audio src="sounds/36.wav" id="Digit5"></audio>
+        <audio src="sounds/37.wav" id="KeyB"></audio>
+        <audio src="sounds/38.wav" id="Numpad3shift"></audio>
+        <audio src="sounds/39.wav" id="KeyG"></audio>
+        <audio src="sounds/40.wav" id="Numpad4shift"></audio>
+        <audio src="sounds/41.wav" id="KeyT"></audio>
+        <audio src="sounds/42.wav" id="Numpad5shift"></audio>
+        <audio src="sounds/43.wav" id="KeyV"></audio>
+        <audio src="sounds/44.wav" id="KeyF"></audio>
+        <audio src="sounds/45.wav" id="Numpad6shift"></audio>
+        <audio src="sounds/46.wav" id="KeyR"></audio>
+        <audio src="sounds/47.wav" id="Numpad7shift"></audio>
+        <audio src="sounds/48.wav" id="KeyC"></audio>
+        <audio src="sounds/49.wav" id="KeyD"></audio>
+        <audio src="sounds/50.wav" id="Numpad8shift"></audio>
+        <audio src="sounds/51.wav" id="KeyE"></audio>
+        <audio src="sounds/52.wav" id="Numpad9shift"></audio>
+        <audio src="sounds/53.wav" id="KeyX"></audio>
+        <audio src="sounds/54.wav" id="NumpadDivideshift"></audio>
+        <audio src="sounds/55.wav" id="KeyS"></audio>
+        <audio src="sounds/56.wav" id="KeyW"></audio>
+        <audio src="sounds/57.wav" id="NumpadMultiplyshift"></audio>
+        <audio src="sounds/58.wav" id="KeyZ"></audio>
+        <audio src="sounds/59.wav" id="NumpadSubtract"></audio>
+        <audio src="sounds/60.wav" id="KeyA"></audio>
+        <audio src="sounds/61.wav" id="KeyQ"></audio>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
